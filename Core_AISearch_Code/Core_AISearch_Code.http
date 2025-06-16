@@ -1,0 +1,18 @@
+@Core_AISearch_Code_HostAddress = http://localhost:5019
+
+GET {{Core_AISearch_Code_HostAddress}}/index
+Accept: application/json
+
+###
+GET {{Core_AISearch_Code_HostAddress}}/search?searchText=CustomerName=Mario
+Accept: application/json
+
+###
+
+POST {{Core_AISearch_Code_HostAddress}}/data
+Accept: application/json
+Content-Type: application/json
+
+{"SearchText":"EmployeeName=Nancy Davolio"}
+
+###
